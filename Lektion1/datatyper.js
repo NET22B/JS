@@ -33,4 +33,17 @@ console.log(firstName.length);
 console.log(firstName[0]);
 console.log(firstName.toUpperCase());
 
+let fullName = 'Kalle Anka';
+// console.log(fullName);
+// console.log(fullName.length); // Kollar längden på en string
+// console.log(fullName[0]);     // skriver ut värdet på en specifik plats
+// console.log(fullName[2]);
+// console.log(fullName.indexOf('a')); // Hittar Index platsen på det första värdet som matchas
+// console.log(fullName.lastIndexOf('a')) // Index på det sista förekommande värdet
 
+// console.log(fullName.toUpperCase());
+// console.log(fullName.toLowerCase());
+
+// console.log(fullName.split(' '))    // Delar en string på det angivna värdet
+
+// console.log(fullName.trim())  // tar bort whitespace före och efter en string
