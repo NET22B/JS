@@ -47,3 +47,44 @@ let fullName = 'Kalle Anka';
 // console.log(fullName.split(' '))    // Delar en string på det angivna värdet
 
 // console.log(fullName.trim())  // tar bort whitespace före och efter en string
+
+
+// Numbers
+// ------------------------
+/* 
+    Math operators
+
+    +   lägg till
+    -   ta bort
+    *   gångra
+    **  upphöjt i
+    /   dela
+    %   division remainder - modulus
+
+    ++  öka med 1
+    --  minska med 1
+
+    =   lika med
+    +=  lägg till
+    -=  ta bort
+    *=  gångra och lägg till
+    /=  dela och lägg til
+    %=  division remainder
+
+*/
+
+let dataType;
+
+console.log(typeof datatype);
+datatype = 'en text';
+console.log(typeof datatype);
+datatype = 3;
+console.log(typeof datatype);
+datatype = null;
+console.log(typeof datatype);   // det här är en bugg i javascript
+datatype = true;
+console.log(typeof datatype);
+datatype = {};
+console.log(typeof datatype);
+datatype = [];
+console.log(typeof datatype);
