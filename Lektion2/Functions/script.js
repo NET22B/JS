@@ -49,12 +49,24 @@ const callbackfunc = (nr1, nr2, cb) => {
 callbackfunc(2,3, (summa) => console.log('Sum: ' , summa));
 callbackfunc(2,3, test);
 
-aaaa = {
-    firstName: 'Kalle'
-}
+// aaaa = {
+//     firstName: 'Kalle'
+// }
+
+// console.log(window.aaaa);
+// console.log(window);
+
+//Scope
+( (aaaa) => {
+
+    aaaa.testFunc = (num) => num
+
+})(window.aaaa = window.aaaa || {});
 
 console.log(window.aaaa);
-console.log(window);
 
+console.log(aaaa.testFunc(3));
+
+console.log(window);
 
 
