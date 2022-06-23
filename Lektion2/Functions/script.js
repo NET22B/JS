@@ -48,6 +48,7 @@ const callbackfunc = (nr1, nr2, cb) => {
 
 callbackfunc(2,3, (summa) => console.log('Sum: ' , summa));
 callbackfunc(2,3, test);
+// callbackfunc(2,3,4);
 
 // aaaa = {
 //     firstName: 'Kalle'

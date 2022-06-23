@@ -9,7 +9,7 @@ const changeText = () => div1.innerText = 'Ny text från js';
 btn1.addEventListener('click', changeText);
 
 
-btn2.addEventListener('click', function() {
+btn2.addEventListener('click', function(e) {
      console.log(e.target);
      console.log(e.target.nextElementSibling);
 
@@ -17,6 +17,14 @@ btn2.addEventListener('click', function() {
      h1.innerText = 'Hej';
      h1.addEventListener('mouseover', () => console.log('over'))
      div3.appendChild(h1);
+
+     // if(div2.classList.contains('upper')){
+     //      div2.classList.remove('upper')
+     // }
+     // else{
+     //      div2.classList.add('upper');
+     // }
+     div2.classList.toggle('upper');
 
 //      div3.innerHTML = `  
 //      <ul id="list">
