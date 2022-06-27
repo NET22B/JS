@@ -41,19 +41,19 @@ $(document).ready(function() {
     $('#div2').show()
   
   
-    // document.getElementById('btn').addEventListener('click', () => {
-    //   let div2 = document.getElementById('div2');
-    //   if(div2.style.display === 'none') {
-    //     div2.style.display = ''
-    //   } else {
-    //     div2.style.display = 'none'
-    //   }
-    // })
-  
-  
-    $('#btn').click(() => {
-      $('#div2').toggle()
+    document.getElementById('btn').addEventListener('click', () => {
+      let div2 = document.getElementById('div2');
+      if(div2.style.display === 'none') {
+        div2.style.display = ''
+      } else {
+        div2.style.display = 'none'
+      }
     })
+  
+  
+    // $('#btn').click(() => {
+    //   $('#div2').toggle()
+    // })
   
   
   });
