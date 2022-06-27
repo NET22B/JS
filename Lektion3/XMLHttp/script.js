@@ -20,10 +20,7 @@ const getRequest = (url, cb) => {
             cb('Server error', undefined);
        }
     })
-
-
-
-
+    
     http.open('GET', url)
     http.send();
 }
