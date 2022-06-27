@@ -52,6 +52,43 @@ const getJson = () => {
 btn2.addEventListener('click', getJson)
 
 
+const gitBtn = document.querySelector('#btn3');
+const gitOutput = document.querySelector('#git-output');
+
+const getGit = () => {
+
+        fetch('https://api.github.com/users/NET22B/repos', {
+            method : 'GET',
+            headers : {
+                'Accept' : 'application/json'
+            }
+        })
+        .then(res => res.json())
+        .then(data => {
+            gitOutput.innerHTML = '';
+
+            data.forEach(repo => {
+                gitOutput.innerHTML += 
+                    `
+            <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">${repo.name}</h5>
+              <p class="card-text">This repository have been forked ${repo.forks_count} times</p>
+              <a href="${repo.html_url}" class="card-link">${repo.name}</a>
+              <a href="${repo.owner.html_url}" class="card-link">Organisation</a>
+            </div>
+            </div>
+
+            `
+            })
+        })
+        .catch(err => console.log('Error ' + err));
+
+}
+
+gitBtn.addEventListener('click', getGit);
+
+
 
 
 
