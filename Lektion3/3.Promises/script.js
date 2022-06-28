@@ -39,6 +39,8 @@ const getRequest = (url) => {
     
 }
 
+// console.log(getRequest('user.json'));
+
 getRequest('user.json')
         .then(data => {
             console.log(data);

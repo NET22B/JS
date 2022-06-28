@@ -15,7 +15,7 @@ let textoutput = document.querySelector('#text-output');
 btn1.addEventListener('click', function () {
     fetch('text.txt')
         .then(function (res) {
-            // console.log(res);
+             console.log(res);
             return res.text();
         })
         .then(function (data) {
